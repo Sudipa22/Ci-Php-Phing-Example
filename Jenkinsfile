@@ -1,8 +1,6 @@
 pipeline{
     agent any
-    tools {
-        phing 'phing' 
-    }
+    tool name: 'phing', type: 'hudson.plugins.phing.PhingInstallation'
     stages{
      stage ('build & test'){
             steps{
