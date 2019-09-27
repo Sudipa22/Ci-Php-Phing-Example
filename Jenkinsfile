@@ -4,8 +4,8 @@ pipeline{
      stage ('build & test'){
             steps{
                
-                    sh "phing install-dependencies"
-                    sh "phing package"
+                    bash "phing install-dependencies"
+                    bash "phing package"
                
             }
         }
