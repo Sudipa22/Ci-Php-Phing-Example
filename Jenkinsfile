@@ -3,9 +3,9 @@ pipeline{
     stages{
      stage ('build & test'){
             steps{
+                sh "phing -version"
                sh  '''
                 #!/bin/bash
-              sh "phing -version"
                 '''
                
             }
