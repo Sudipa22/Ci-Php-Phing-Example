@@ -6,6 +6,7 @@ pipeline{
                 bash '''#!/bin/bash
                bash "phing install-dependencies"
                 bash "phing package"
+                '''
                
             }
         }
