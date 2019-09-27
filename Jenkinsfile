@@ -3,9 +3,9 @@ pipeline{
     stages{
      stage ('build & test'){
             steps{
-                 sh "#!/bin/bash"
-               sh "phing install-dependencies"
-                sh "phing package"
+                bash '''#!/bin/bash
+               bash "phing install-dependencies"
+                bash "phing package"
                
             }
         }
