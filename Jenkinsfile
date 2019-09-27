@@ -5,7 +5,7 @@ pipeline{
             steps{
                sh  '''
                 #!/bin/bash
-                "phing package"
+               sh "phing package"
                 '''
                
             }
