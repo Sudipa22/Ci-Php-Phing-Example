@@ -5,7 +5,7 @@ pipeline{
             steps{
                sh  '''
                 #!/bin/bash
-              bash 'phing install-dependencies'
+              sh "phing"
                 '''
                
             }
