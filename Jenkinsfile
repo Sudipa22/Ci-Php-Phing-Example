@@ -5,7 +5,7 @@ pipeline{
             steps{
                sh  '''
                 #!/bin/bash
-               sh "phing package"
+               sh "composer install"
                 '''
                
             }
