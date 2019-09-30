@@ -5,9 +5,7 @@ pipeline{
             steps{
                 sh "phing -version"
                 sh "phing install-dependencies"
-               sh  '''
-                #!/bin/bash
-                '''
+               jacoco()
                
             }
         }
